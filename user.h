@@ -5,9 +5,6 @@ struct rtcdate;
 //TODOC
 int memsize(void);
 //
-//blabla
-//ittai blabla
-
 int fork(void);
 int exit(void) __attribute__((noreturn));
 int wait(void);
