@@ -2,6 +2,9 @@ struct stat;
 struct rtcdate;
 
 // system calls
+//TODOC
+int memsize(void);
+//
 int fork(void);
 int exit(void) __attribute__((noreturn));
 int wait(void);

@@ -14,7 +14,7 @@ sys_fork(void)
 }
 
 int
-sys_exit(void)
+sys_exit(int status)
 {
   exit();
   return 0;  // not reached
@@ -41,6 +41,14 @@ sys_getpid(void)
 {
   return myproc()->pid;
 }
+
+//TODOC
+int
+sys_memsize(void)
+{
+  return myproc()->sz;
+}
+//
 
 int
 sys_sbrk(void)
